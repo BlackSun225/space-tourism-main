@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-CI">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Space Tourism Main</title>
+    <link rel="icon" type="x-icon/image" href="assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="space_tourism.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700&family=Bellefair&display=swap" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <main id="crew">
+      <header>
+        <img id="logo" alt="" src="assets/shared/logo.svg" />
+        <nav class="desk">
+          <ul>
+            <li ><a href="index.html"><span class="desk">00</span> HOME</a></li>
+            <li ><a href="destination.html"><span class="desk">01</span> DESTINATION</a></li>
+            <li ><a class="active" href="crew.html"><span class="desk">02</span> CREW</a></li>
+            <li ><a href="technology.html"><span class="desk">03</span> TECHNOLOGY</a></li>
+          </ul>
+        </nav>
+        <nav class="mob">
+          <img id="open" alt="" src="assets/shared/icon-hamburger.svg" />
+          <img src="assets/shared/icon-close.svg" alt="" id="close">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="destination.html">DESTINATION</a></li>
+            <li><a href="crew.html">CREW</a></li>
+            <li><a href="technology.html">TECHNOLOGY</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <h1><span>02</span> MEET YOUR CREW</h1>
+        <div>
+          <div id="squadmember">
+            <h2>FLIGHT ENGINEER</h2>
+            <h3>ANOUSHEH ANSARI</h3>
+            <p>Anousheh Ansari is an Iranian American engineer and co-founder of Prodea 
+              Systems. Ansari was the fourth self-funded space tourist, the first self-funded 
+              woman to fly to the ISS, and the first Iranian in space.
+            </p>
+            <ul>
+              <li id="commander"></li>
+              <li id="pilot"></li>
+              <li id="specialist"></li>
+              <li id="engineer" class="active"></li>
+            </ul>
+          </div>
+          <div id="memberpic">
+            <img alt="" src="assets/crew/image-anousheh-ansari.png" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="space_tourism.js"></script>
+  </body>
+</html>

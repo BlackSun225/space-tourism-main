@@ -1,0 +1,707 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body{
+  width: 100%;
+  font-size: 16px;
+  position: relative;
+}
+#home, #destination, #crew, #technology {
+  width: 100%;
+  background-size: cover;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#logo {
+  width: 2.4rem;
+}
+header nav.desk {
+  width: 60%;
+  background-color: rgba(181, 168, 216, 0.1);
+  backdrop-filter: blur(15px);
+  position: relative;
+}
+ul {
+  list-style-type: none;
+}
+header nav.desk ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav.desk ul li {
+  font-size: 0.9rem;
+  transition: all ease-out 0.5s;
+}
+header nav.desk ul li:hover {
+  text-shadow: 0 0 4px rgb(255, 247, 200);
+  font-size: 1.2rem;
+}
+header nav.desk ul li a {
+  color: rgb(255, 255, 255);
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  position: relative;
+}
+header nav.desk span {
+  color: white;
+  font-weight: 500;
+  margin-right: 4px;
+}
+header nav.desk ul li a.active::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#home section {
+  width: 100%;
+}
+#home h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 200;
+  letter-spacing: 4px;
+  color: rgba(230, 225, 255, 0.945);
+}
+#home h2 {
+  font-family: "Bellefair", serif;
+  font-size: 8rem;
+  font-weight: 400;
+  margin: 1.5rem 0;
+  color: white;
+}
+p {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 1.7rem;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.733);
+}
+#home p {
+  color: rgba(230, 225, 255, 0.945);
+}
+#home section > a {
+  width: 16rem;
+  height: 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  margin: 0 auto;
+  margin-top: 6rem;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s; 
+  font-size: 33px;
+  font-family: "Bellefair", serif;
+  color: rgb(0, 0, 39);
+}
+#home section > a:hover {
+  transform: scale(110%);
+  -ms-transform: scale(110%);
+  -moz-transform: scale(110%);
+  -webkit-transform: scale(110%);
+  box-shadow: 0 0 25px rgb(255, 251, 228);
+  background-color: rgba(255, 255, 255, 0.863);
+}
+#destination section {
+  width: 100%;
+  margin: 0 auto;
+}
+#destination section h1, #crew section h1, #technology section h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 200;
+  letter-spacing: 4px;
+  color: white;
+}
+#destination section h1 span, #crew section h1 span, #technology section h1 span {
+  font-weight: 700;
+  margin-right: 0.5rem;
+  color: rgba(136, 134, 134, 60%);
+  font-size: 1.3rem;
+}
+#destination section > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+}
+#imgdestin {
+  width: 50%;
+}
+#imgdestin img {
+  width: 70%;
+  margin-left: 10%;
+}
+#infosdestin {
+  width: 50%;
+  padding-left: 5%;
+}
+#infosdestin ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+#infosdestin ul li {
+  margin-right: 1.5rem;
+}
+#infosdestin ul li a {
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  position: relative;
+}
+#infosdestin ul li a.active::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -0.8rem;
+}
+#infosdestin h2 {
+  color: white;
+  font-family: "Bellefair", serif;
+  font-size: 6rem;
+  font-weight: 400;
+  margin-top: 1.7rem;
+  margin-bottom: 1.4rem;
+}
+#infosdestin p {
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.521);
+  margin-bottom: 1rem;
+}
+#infosdestin > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#infosdestin > div > div {
+  width: 40%;
+}
+#infosdestin > div h3, #infosdestin > div span {
+  color: white;
+}
+#infosdestin div span {
+  color: rgba(255, 255, 255, 0.733);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.75rem; 
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+#infosdestin div h3 {
+  color: white;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  margin-top: 0.4rem;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+#crew section {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+#crew section > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+#squadmember, #memberpic {
+  width: 50%;
+}
+#squadmember h2, #squadmember h3 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: white;
+}
+#squadmember h2 {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.644);
+  margin-bottom: 0.9rem;
+}
+#squadmember h3 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+#squadmember p {
+  margin-bottom: 5rem;
+}
+#squadmember ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#squadmember li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.178);
+  margin-right: 1.2rem;
+  cursor: pointer;
+}
+#squadmember li.active {
+  background: white;
+}
+#memberpic {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+#memberpic img {
+  width: 80%;
+  margin: 0 auto;
+}
+#technology section {
+  width: 100%;
+  margin-top: 2.5rem;
+  padding-bottom: 4rem;
+}
+#technology section > div {
+  margin-top: 2rem;
+}
+#space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#space ul {
+  width: 3.5rem;
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#space ul li {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  font-size: 1.15rem;
+  font-weight: 400;
+  font-family: "Bellefair", serif;
+  background: transparent;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all ease-out 0.5s;
+}
+#space ul li.active {
+  color: rgb(0, 0, 39);
+  text-shadow: 0 0 1px rgb(0, 0, 39);
+  font-weight: 400;
+  background: white;
+  border: none;
+}
+#space > div {
+  width: 83%;
+}
+#space h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.733);
+  letter-spacing: 2px;
+  font-weight: 200;
+  margin-bottom: 0.9rem;
+}
+#space h3 {
+  font-family: "Bellefair", serif;
+  color: white;
+  font-size: 3.6rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+}
+#spaceimg img {
+  width: 100%;
+}
+
+@media screen and (min-width:990px) {
+  #home, #destination, #crew, #technology {
+    max-width: 1440px;
+    min-height: 100vh;
+  }
+  #home {
+    background: url("assets/home/background-home-desktop.jpg") no-repeat;
+  }
+  .mob {
+    display: none;
+  }
+  header {
+    padding: 2rem 0;
+    padding-left: 2.6rem;
+  }
+  header nav.desk {
+    padding: 1.5rem 0;
+  }
+  header nav.desk::before {
+    content: "";
+    width: 60%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.308);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-92%,0);
+  }
+  header nav.desk ul li a.active::after {
+    transform: translateY(calc(1.5rem + 2px));
+  }
+  header nav.desk ul li {
+    margin-right: 2.2rem;
+  }
+  #home section {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  #home section > div {
+    width: 50%;
+    padding: 0 10%;
+  }
+  #home p {
+    width: 100%;
+  }
+  #destination {
+    background: url("assets/destination/background-destination-desktop.jpg") no-repeat;
+  }
+  #destination section {
+    padding: 2.5rem 10%;  
+  }
+  #infosdestin p {
+    width: 70%;
+  }
+  #crew {
+    background: url("assets/crew/background-crew-desktop.jpg") no-repeat;
+  }
+  #crew section {
+    padding: 0 10%;
+  }
+  #squadmember p {
+    width: 70%;
+  }
+  #technology {
+    background: url("assets/technology/background-technology-desktop.jpg") no-repeat;
+  }
+  #technology section {
+    padding-left: 10%;
+  }
+  #technology section > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #space {
+    width: 53%;
+  }
+  #space .tab, #spaceimg .tab {
+    display: none;
+  }
+  #spaceimg {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width:750px) and (max-width:990px) {
+  #home {
+    background: url("assets/home/background-home-tablet.jpg") no-repeat;
+    background-size: cover;
+  }
+  .mob {
+    display: none;
+  }
+  header {
+    padding-left: 2.6rem;
+  }
+  header nav.desk {
+    padding: 2.5rem 0;
+  }
+  header nav.desk ul {
+    padding: 0 1.5rem;
+  }
+  header nav.desk ul li:not(:last-child) {
+    margin-right: 2.2rem;
+  }
+  header nav.desk ul li a.active::after {
+    transform: translateY(calc(2.5rem + 2px));
+  }
+  header .desk span {
+    display: none;
+  }
+  #home section {
+    margin-top: 6rem;
+  }
+  #home section h1, #home section h2, #home section p {
+    text-align: center;
+  }
+  #home section p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  #home section {
+    padding-bottom: 6rem;
+  }
+  #home section > div {
+    padding-bottom: 3rem;
+  }
+  #destination {
+    background: url("assets/destination/background-destination-tablet.jpg") no-repeat;
+    background-size: cover;
+  }
+  #destination section {
+    padding: 2.5rem;
+  }
+  #destination section > div {
+    flex-direction: column;
+    align-items: center;
+  }
+  #infosdestin, #imgdestin {
+    width: 100%;
+    padding: 0;
+  }
+  #imgdestin img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+  #infosdestin ul {
+    padding-top: 4rem;
+    justify-content: center;
+  }
+  #infosdestin h2, #infosdestin p {
+    text-align: center;
+  }
+  #infosdestin > div > div {
+    width: 50%;
+  }
+  #crew {
+    background: url("assets/crew/background-crew-tablet.jpg") no-repeat;
+    background-size: cover;
+  }
+  #crew section {
+    padding: 0 2.5rem;
+  }
+  #crew section > div {
+    flex-direction: column;
+    align-items: center;
+  }
+  #squadmember, #memberpic {
+    width: 100%;
+  }
+  #memberpic img {
+    width: 70%;
+    margin: 0 auto;
+  }
+  #technology {
+    background: url("assets/technology/background-technology-tablet.jpg") no-repeat;
+    background-size: cover;
+  }
+  #technology section {
+    padding: 2.5rem;
+    padding-bottom: 6rem;
+  }
+  #space {
+    margin: 7rem 0;
+  }
+  #space .desk, #spaceimg .desk {
+    display: none;
+  }
+}
+
+@media screen and (max-width:750px) {
+  #home, #destination, #crew, #technology {
+    min-width: 280px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .desk {
+    display: none;
+  }
+  header {
+    padding: 1.8rem;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  header nav.mob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav.mob img {
+    width: 1.7rem;
+    cursor: pointer;
+  }
+  #close {
+    display: none;
+  }
+  header nav.mob ul {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.048);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 2.2rem 0;
+  }
+  header nav.mob ul li:not(:last-child) {
+    margin-bottom: 0.9rem;
+  }
+  header nav.mob ul li a {
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+  }
+  #home {
+    background: url("assets/home/background-home-mobile.jpg") no-repeat;
+    background-size: cover;
+    padding-bottom: 2rem;
+  }
+  #home section {
+    padding: 1.8rem;
+  }
+  #home section h1, #home section h2, #home section p,#destination section h1, #crew section h1, #technology section h1 {
+    text-align: center;
+  }
+  #home section h2 {
+    font-size: 6rem;
+  }
+  #destination {
+    background: url("assets/destination/background-destination-mobile.jpg") no-repeat;
+    background-size: cover;
+  }
+  #destination section {
+    padding: 2rem 1.8rem;
+  }
+  #destination section > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #imgdestin, #infosdestin {
+    all: unset;
+    width: 100%;
+    padding: 0;
+  }
+  #imgdestin {
+    margin-bottom: 2rem;
+  }
+  #imgdestin img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #infosdestin ul {
+    justify-content: center;
+  }
+  #infosdestin h2, #infosdestin p {
+    width: 100%;
+    text-align: center;
+  }
+  #infosdestin h2 {
+    font-size: 4rem;
+  }
+  #infosdestin > div > div {
+    width: 50%;
+  }
+  #crew {
+    background: url("assets/crew/background-crew-mobile.jpg") no-repeat;
+    background-size: cover;   
+  }
+  #crew section {
+    padding-inline: 1.8rem;
+  }
+  #crew section > div {
+    flex-direction: column;
+    align-items: center;
+  }
+  #squadmember, #memberpic {
+    width: 100%;
+  }
+  #squadmember h2, #squadmember h3, #squadmember p {
+    width: 100%;
+    text-align: center;
+  }
+  #squadmember p {
+    margin-bottom: 0rem;
+  }
+  #squadmember ul {
+    justify-content: center;
+    margin: 3rem auto;
+  }
+  #technology {
+    background: url("assets/technology/background-technology-mobile.jpg") no-repeat;
+    background-size: cover;
+  }
+  #technology section {
+    padding: 0 1.8rem;
+    padding-bottom: 4rem;
+  }
+  #technology li.desk {
+    display: none;
+  }
+  #space {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  #space ul {
+    width: 100%;
+    height: 3.5rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  #space ul li:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+  #space h2, #space h3, #space p {
+    text-align: center;
+  }
+  #space h3 {
+    font-size: 3rem;
+  }
+}

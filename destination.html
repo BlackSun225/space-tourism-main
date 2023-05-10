@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-CI">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Tourism Main</title>
+    <link rel="icon" type="x-icon/image" href="assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="space_tourism.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700&family=Bellefair&display=swap" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <main id="destination">
+      <header>
+        <img id="logo" alt="" src="assets/shared/logo.svg" />
+        <nav class="desk">
+          <ul>
+            <li ><a href="index.html"><span class="desk">00</span> HOME</a></li>
+            <li ><a class="active" href="destination.html"><span class="desk">01</span> DESTINATION</a></li>
+            <li ><a href="crew.html"><span>02</span class="desk"> CREW</a></li>
+            <li ><a href="technology.html"><span class="desk">03</span> TECHNOLOGY</a></li>
+          </ul>
+        </nav>
+        <nav class="mob">
+          <img id="open" alt="" src="assets/shared/icon-hamburger.svg" />
+          <img src="assets/shared/icon-close.svg" alt="" id="close">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="destination.html">DESTINATION</a></li>
+            <li><a href="crew.html">CREW</a></li>
+            <li><a href="technology.html">TECHNOLOGY</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <h1><span>01</span> PICK YOUR DESTINATION</h1>
+        <div>
+          <div id="imgdestin">
+            <img alt="mars" src="assets/destination/image-mars.png" />
+          </div>
+          <div id="infosdestin">
+            <ul>
+              <li><a id="moon" href="#">MOON</a></li>
+              <li><a class="active" id="mars" href="#">MARS</a></li>
+              <li><a id="europa" href="#">EUROPA</a></li>
+              <li><a id="titan" href="#">TITAN</a></li>
+            </ul>
+            <h2>MARS</h2>
+            <p>Don't forget to pack your hiking boots. You'll need 
+                them to tackle Olympus Mons, the tallest planetary 
+                mountain in our solar system. It's two and half times 
+                the size of Everest!
+            </p>
+            <div>
+              <div id="distance">
+                <span>AVG. DISTANCE</span>
+                <h3>225 MIL. KM</h3>
+              </div>
+              <div id="travel">
+                <span>EST. TRAVEL TIME</span>
+                <h3>9 MONTHS</h3>
+              </div>    
+            </div>
+          </div>  
+        </div>
+      </section>  
+    </main>
+    <script src="space_tourism.js"></script>
+  </body>
+</html>
