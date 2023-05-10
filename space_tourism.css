@@ -28,7 +28,7 @@ header {
 }
 header nav.desk {
   width: 60%;
-  background-color: rgba(181, 168, 216, 0.1);
+  background-color: rgba(181, 168, 216, 0.103);
   backdrop-filter: blur(15px);
   position: relative;
 }
