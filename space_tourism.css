@@ -349,7 +349,7 @@ p {
 
 @media screen and (min-width:990px) {
   #home, #destination, #crew, #technology {
-    max-width: 1440px;
+    /* max-width: 1440px; */
     min-height: 100vh;
   }
   #home {
