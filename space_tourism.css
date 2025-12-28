@@ -351,6 +351,7 @@ p {
   #home, #destination, #crew, #technology {
     /* max-width: 1440px; */
     min-height: 100vh;
+    background-size: cover;
   }
   #home {
     background: url("assets/home/background-home-desktop.jpg") no-repeat;
